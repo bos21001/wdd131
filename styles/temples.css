@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: "Ubuntu Sans", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.active {
+    text-decoration: overline;
+    cursor: default;
+}
+
+figcaption {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.bg-primary {
+    background-color: #174e70;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
+
+.bg-primary p, nav a {
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 15px;
+}
+
+.header h1 {
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    background: #191818;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.show {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    max-width: 100%;
+}
+
+.album, #album {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+img {
+    max-width: 100%;
+}
